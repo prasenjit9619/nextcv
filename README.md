@@ -1,3 +1,3 @@
 # nextcv
-Modular ATS Friendly LaTeX CV Template
+ATS-friendly Modular LaTeX CV Template
 
