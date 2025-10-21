@@ -1,7 +1,8 @@
-# Force LF endings for all text files
+# Normalize all text files to LF in repo
 * text=auto eol=lf
 
-# Or target specific file types
+# Force LF for specific file types (e.g., LaTeX, scripts)
 *.tex text eol=lf
-*.sh text eol=lf
-
+*.sh  text eol=lf
+*.py  text eol=lf
+*.md  text eol=lf

@@ -216,13 +216,6 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% --- Section formatting ---
-% \newcommand{\bsc}[1]{\textbf{\textsc{#1}}}
-% \newcommand{\bsc}[1]{\textbf{\scshape{#1}}}
-% \titleformat{\section}{
-%   \vspace{-4pt}\raggedright\large\color{ACCENT_COLOR}
-% }{}{0em}{\bsc}[\color{ACCENT_COLOR}\titlerule \vspace{-5pt}]
-
 
 % --- Section formatting ---
 \newcommand{\bsc}[1]{\textbf{\scshape{#1}}}
@@ -241,19 +234,11 @@
   {0.5\baselineskip} % space *after*
 
 
-
-
 % --- PDF accessibility ---
 \pdfgentounicode=1
 
 % --- Custom commands ---
 \newcommand{\customItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
-
-% \newcommand{\customSubHeading}[2]{\vspace{-2pt}\item
-%   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%     \textbf{#1} & \textbf{\small #2} \\
-%   \end{tabular*}\vspace{-7pt}
-% }
 
 \newcommand{\customSubHeading}[2]{\vspace{-2pt}\item
   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
