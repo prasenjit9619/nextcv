@@ -15,7 +15,7 @@ Quick build:
 xelatex main.tex
 ```
 
-Overleaf template: [Add Overleaf link here](ADD_OVERLEAF_LINK_HERE)
+Overleaf template: [Add Overleaf link here](nextcv template)
 
 License: see `LICENSE`.
 
