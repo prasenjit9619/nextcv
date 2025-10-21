@@ -1,11 +1,11 @@
 % ----------------------------------------------------------------
-%  nextcv.cls  --  Modular LaTeX CV Template
+%  nextcv.cls  --  ATS-friendly Modular LaTeX CV Template
 %  Author: Prasenjit Das (https://www.linkedin.com/in/prasenjit9619/)
 %  Version: 1.0
 %  Date: 2025-08-13
 % ----------------------------------------------------------------
 
-\ProvidesClass{nextcv}[2025/08/13 v1.0 Modular LaTeX CV Template by Prasenjit Das]
+\ProvidesClass{nextcv}[2025/08/13 v1.0 ATS-friendly Modular LaTeX CV Template by Prasenjit Das]
 
 % --- Metadata macro (ATS-ready defaults) ---
 \newcommand{\cvmeta}[4]{
