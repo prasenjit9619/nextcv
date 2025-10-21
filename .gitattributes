@@ -1,0 +1,7 @@
+# Force LF endings for all text files
+* text=auto eol=lf
+
+# Or target specific file types
+*.tex text eol=lf
+*.sh text eol=lf
+
