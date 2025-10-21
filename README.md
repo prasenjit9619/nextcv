@@ -1,4 +1,4 @@
-# nextcv — Short README
+# nextcv
 
 A compact, modular LaTeX CV template that's easy to customize and share.
 
