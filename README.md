@@ -26,7 +26,7 @@ Build with PowerShell or CMD or Bash
 xelatex main.tex
 
 
-- Overleaf template: [link](nextcv template)
+- Overleaf template: [nextcv template](https://www.overleaf.com/read/ryknrgsrcskz#1ccc20)
 - Github link: [nextcv template](https://github.com/prasenjit9619/nextcv)
 
 License: see `LICENSE`.
