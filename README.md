@@ -19,7 +19,8 @@ I built this with simplicity, flexibility, and recruiter‑friendliness in mind.
 
 ## 🔗 Try it out here
 - Overleaf template: [nextcv on Overleaf](https://www.overleaf.com/read/ryknrgsrcskz#1ccc20)  
-- GitHub repo: [nextcv on GitHub](https://github.com/prasenjit9619/nextcv)  
+- GitHub repo: [nextcv on GitHub](https://github.com/prasenjit9619/nextcv)
+- Output: [Resume PDF](https://github.com/prasenjit9619/nextcv/blob/main/main.pdf)
 
 ---
 
