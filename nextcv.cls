@@ -54,7 +54,7 @@
 \DeclareStringOption[roboto]{font}
 \ProcessKeyvalOptions*
 
-\newcommand{\SelectNextCVFont}[1]{%
+\newcommand{\SelectNextCVFont}[1]{
   \ifPDFTeX
     \RequirePackage[T1]{fontenc}
     \RequirePackage{lmodern}
@@ -63,139 +63,139 @@
     \setmainfont{Latin Modern Roman}
   \fi
 
-  \ifdefstring{#1}{garamond}{%
+  \ifdefstring{#1}{garamond}{
     \ifPDFTeX
-      \IfFileExists{ebgaramond.sty}{\RequirePackage{ebgaramond}}{}%
+      \IfFileExists{ebgaramond.sty}{\RequirePackage{ebgaramond}}{}
     \else
-      \IfFontExistsTF{EB Garamond}{\setmainfont{EB Garamond}}{%
-        \IfFontExistsTF{Garamond}{\setmainfont{Garamond}}{}%
-      }%
+      \IfFontExistsTF{EB Garamond}{\setmainfont{EB Garamond}}{
+        \IfFontExistsTF{Garamond}{\setmainfont{Garamond}}{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{roboto}{%
+  \ifdefstring{#1}{roboto}{
     \ifPDFTeX
-      \IfFileExists{roboto.sty}{%
+      \IfFileExists{roboto.sty}{
         \RequirePackage[sfdefault]{roboto}
         \renewcommand{\familydefault}{\sfdefault}
-      }{}%
+      }{}
     \else
-      \IfFontExistsTF{Roboto}{%
+      \IfFontExistsTF{Roboto}{
         \setsansfont{Roboto}
         \renewcommand{\familydefault}{\sfdefault}
-      }{}%
+      }{}
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{robotoslab}{%
+  \ifdefstring{#1}{robotoslab}{
     \ifPDFTeX
-      \IfFileExists{roboto-slab.sty}{\RequirePackage{roboto-slab}}{}%
+      \IfFileExists{roboto-slab.sty}{\RequirePackage{roboto-slab}}{}
     \else
-      \IfFontExistsTF{Roboto Slab}{\setmainfont{Roboto Slab}}{}%
+      \IfFontExistsTF{Roboto Slab}{\setmainfont{Roboto Slab}}{}
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{sourcesans}{%
+  \ifdefstring{#1}{sourcesans}{
     \ifPDFTeX
-      \IfFileExists{sourcesanspro.sty}{%
+      \IfFileExists{sourcesanspro.sty}{
         \RequirePackage[sfdefault]{sourcesanspro}
         \renewcommand{\familydefault}{\sfdefault}
-      }{}%
+      }{}
     \else
-      \IfFontExistsTF{Source Sans 3}{%
+      \IfFontExistsTF{Source Sans 3}{
         \setsansfont{Source Sans 3}
         \renewcommand{\familydefault}{\sfdefault}
-      }{%
-        \IfFontExistsTF{Source Sans Pro}{%
+      }{
+        \IfFontExistsTF{Source Sans Pro}{
           \setsansfont{Source Sans Pro}
           \renewcommand{\familydefault}{\sfdefault}
-        }{}%
-      }%
+        }{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{lato}{%
+  \ifdefstring{#1}{lato}{
     \ifPDFTeX
-      \IfFileExists{lato.sty}{%
+      \IfFileExists{lato.sty}{
         \RequirePackage[defaultsans]{lato}
         \renewcommand{\familydefault}{\sfdefault}
-      }{}%
+      }{}
     \else
-      \IfFontExistsTF{Lato}{%
+      \IfFontExistsTF{Lato}{
         \setsansfont{Lato}
         \renewcommand{\familydefault}{\sfdefault}
-      }{}%
+      }{}
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{calibri}{%
+  \ifdefstring{#1}{calibri}{
     \ifPDFTeX
-      \IfFileExists{calibri.sty}{%
+      \IfFileExists{calibri.sty}{
         \RequirePackage[sfdefault]{calibri}
         \renewcommand{\familydefault}{\sfdefault}
-      }{%
-        \IfFileExists{carlito.sty}{%
+      }{
+        \IfFileExists{carlito.sty}{
           \RequirePackage[sfdefault]{carlito}
           \renewcommand{\familydefault}{\sfdefault}
-        }{}%
-      }%
+        }{}
+      }
     \else
-      \IfFontExistsTF{Calibri}{%
+      \IfFontExistsTF{Calibri}{
         \setsansfont{Calibri}
         \renewcommand{\familydefault}{\sfdefault}
-      }{%
-        \IfFontExistsTF{Carlito}{%
+      }{
+        \IfFontExistsTF{Carlito}{
           \setsansfont{Carlito}
           \renewcommand{\familydefault}{\sfdefault}
-        }{}%
-      }%
+        }{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{cambria}{%
+  \ifdefstring{#1}{cambria}{
     \ifPDFTeX
-      \IfFileExists{newtxtext.sty}{\RequirePackage{newtxtext,newtxmath}}{}%
+      \IfFileExists{newtxtext.sty}{\RequirePackage{newtxtext,newtxmath}}{}
     \else
-      \IfFontExistsTF{Cambria}{\setmainfont{Cambria}}{%
-        \IfFontExistsTF{Liberation Serif}{\setmainfont{Liberation Serif}}{}%
-      }%
+      \IfFontExistsTF{Cambria}{\setmainfont{Cambria}}{
+        \IfFontExistsTF{Liberation Serif}{\setmainfont{Liberation Serif}}{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{timesnewroman}{%
+  \ifdefstring{#1}{timesnewroman}{
     \ifPDFTeX
       \RequirePackage{newtxtext,newtxmath}
     \else
-      \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{%
-        \IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{}%
-      }%
+      \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{
+        \IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{helvetica}{%
+  \ifdefstring{#1}{helvetica}{
     \ifPDFTeX
       \RequirePackage[scaled]{helvet}
       \renewcommand{\familydefault}{\sfdefault}
     \else
-      \IfFontExistsTF{Helvetica}{%
+      \IfFontExistsTF{Helvetica}{
         \setsansfont{Helvetica}
         \renewcommand{\familydefault}{\sfdefault}
-      }{%
-        \IfFontExistsTF{Arial}{%
+      }{
+        \IfFontExistsTF{Arial}{
           \setsansfont{Arial}
           \renewcommand{\familydefault}{\sfdefault}
-        }{}%
-      }%
+        }{}
+      }
     \fi
-  }{}%
+  }{}
 
-  \ifdefstring{#1}{caladea}{%
+  \ifdefstring{#1}{caladea}{
     \ifPDFTeX
-      \IfFileExists{caladea.sty}{\RequirePackage{caladea}}{}%
+      \IfFileExists{caladea.sty}{\RequirePackage{caladea}}{}
     \else
-      \IfFontExistsTF{Caladea}{\setmainfont{Caladea}}{}%
+      \IfFontExistsTF{Caladea}{\setmainfont{Caladea}}{}
     \fi
-  }{}%
+  }{}
 }
 \SelectNextCVFont{\NextCV@font}
 
@@ -280,7 +280,7 @@
 }
 
 
-% --- Color Palette ---
+% --- Color Palette, change at your prefference ---
 \definecolor{ACCENT_COLOR}{HTML}{343434}       % Deep navy-charcoal
 \definecolor{BODY_TEXT_COLOR}{HTML}{28282B}    % Soft black
 \definecolor{LINK_COLOR}{HTML}{005A99}         % Balanced blue
@@ -304,65 +304,65 @@
 % ----------------------------------------------------------------
 %   SILENT PDF BOOKMARKS FOR KEY SECTIONS
 % ----------------------------------------------------------------
-\newcommand{\cvsectionbookmark}[2]{%
+\newcommand{\cvsectionbookmark}[2]{
   \phantomsection
-  \pdfbookmark[#1]{#2}{#2}%
+  \pdfbookmark[#1]{#2}{#2}
 }
 
 % Example fixed-section wrappers:
-\newcommand{\experienceSection}{%
-  \cvsectionbookmark{0}{Experience}%
-  \section*{Experience}%
+\newcommand{\experienceSection}{
+  \cvsectionbookmark{0}{Experience}
+  \section*{Experience}
 }
-\newcommand{\skillsSection}{%
-  \cvsectionbookmark{0}{Technical Skills}%
-  \section*{Technical Skills}%
+\newcommand{\skillsSection}{
+  \cvsectionbookmark{0}{Technical Skills}
+  \section*{Technical Skills}
 }
-\newcommand{\educationSection}{%
-  \cvsectionbookmark{0}{Education}%
-  \section*{Education}%
-}
-
-\newcommand{\headerSection}{%
-  \cvsectionbookmark{0}{Header}%
+\newcommand{\educationSection}{
+  \cvsectionbookmark{0}{Education}
+  \section*{Education}
 }
 
-\newcommand{\profileSection}{%
-  \cvsectionbookmark{0}{Profile Statement}%
-  \section*{Profile Statement}%
+\newcommand{\headerSection}{
+  \cvsectionbookmark{0}{Header}
 }
 
-\newcommand{\achievementsSection}{%
-  \cvsectionbookmark{0}{Awards and Achievements}%
-  \section*{Awards and Achievements}%
+\newcommand{\profileSection}{
+  \cvsectionbookmark{0}{Profile Statement}
+  \section*{Profile Statement}
 }
 
-\newcommand{\researchprojects}{%
-  \cvsectionbookmark{0}{Research Projects}%
-  \section*{Research Projects}%
+\newcommand{\achievementsSection}{
+  \cvsectionbookmark{0}{Awards and Achievements}
+  \section*{Awards and Achievements}
 }
 
-\newcommand{\projectsSection}{%
-  \cvsectionbookmark{0}{Projects}%
-  \section*{Projects}%
+\newcommand{\researchprojects}{
+  \cvsectionbookmark{0}{Research Projects}
+  \section*{Research Projects}
 }
 
-\newcommand{\interestsSection}{%
-  \cvsectionbookmark{0}{Interests}%
-  \section*{Interests}%
+\newcommand{\projectsSection}{
+  \cvsectionbookmark{0}{Projects}
+  \section*{Projects}
 }
 
-\newcommand{\training}{%
-  \cvsectionbookmark{0}{Training and Workshops}%
-  \section*{Training and Workshops}%
+\newcommand{\interestsSection}{
+  \cvsectionbookmark{0}{Interests}
+  \section*{Interests}
 }
 
-\newcommand{\volunteering}{%
-  \cvsectionbookmark{0}{Volunteering}%
-  \section*{Volunteering}%
+\newcommand{\training}{
+  \cvsectionbookmark{0}{Training and Workshops}
+  \section*{Training and Workshops}
 }
 
-\newcommand{\onlinecourses}{%
-  \cvsectionbookmark{0}{Online Courses and Certification}%
-  \section*{Online Courses and Certification}%
+\newcommand{\volunteering}{
+  \cvsectionbookmark{0}{Volunteering}
+  \section*{Volunteering}
+}
+
+\newcommand{\onlinecourses}{
+  \cvsectionbookmark{0}{Online Courses and Certification}
+  \section*{Online Courses and Certification}
 }
