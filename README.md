@@ -1,4 +1,4 @@
-# nextcv - A compact, modular LaTeX CV template that's easy to customize and share.
+# nextcv - ATS-friendly Modular LaTeX CV Template
 
 Everyone wants to build a clean‑looking resume. But building one from scratch takes time. And with so many templates out there, finding the perfect one isn’t easy.  
 
