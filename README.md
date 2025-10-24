@@ -22,13 +22,12 @@ To set up and build this project locally in Visual Studio Code:
 - Install [TeX Live](https://www.tug.org/texlive/)  
 - Install the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension by James Yu
 
-
-## ▶️ Build with PowerShell or CMD or Bash
+Build with PowerShell or CMD or Bash
 xelatex main.tex
 
 
-Overleaf template: [link](nextcv template)
-Github link: [link](nextcv template)
+- Overleaf template: [link](nextcv template)
+- Github link: [link](nextcv template)
 
 License: see `LICENSE`.
 
