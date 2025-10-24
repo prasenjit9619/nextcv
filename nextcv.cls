@@ -1,6 +1,7 @@
 % ----------------------------------------------------------------
 %  nextcv.cls  --  ATS-friendly Modular LaTeX CV Template
 %  Author: Prasenjit Das (https://www.linkedin.com/in/prasenjit9619/)
+%  Helped by: Github Copilot
 %  Version: 1.0
 %  Date: 2025-08-13
 % ----------------------------------------------------------------
