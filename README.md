@@ -4,7 +4,7 @@ A compact, modular LaTeX CV template that's easy to customize and share.
 
 ## ✨ Features
 
-- **Modular structure**: neatly organized sections in `sections/` for quick edits and flexible arrangement  
+- **Modular structure**: neatly organized sections for quick edits and flexible arrangement  
 - **ATS‑friendly design**: clean typography and layout optimized for Applicant Tracking Systems  
 - **Lightweight build**: fully compatible with both XeLaTeX and PDFLaTeX  
 - **Simple customization**: centralized styling via `nextcv.cls` for easy tweaks  
@@ -23,11 +23,11 @@ To set up and build this project locally in Visual Studio Code:
 - Install the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension by James Yu
 
 Build with PowerShell or CMD or Bash
-xelatex main.tex
+- xelatex main.tex
 
 
 - Overleaf template: [link](nextcv template)
-- Github link: [link](nextcv template)
+- Github link: [nextcv template](https://github.com/prasenjit9619/nextcv)
 
 License: see `LICENSE`.
 
