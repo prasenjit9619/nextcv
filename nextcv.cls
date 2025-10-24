@@ -216,6 +216,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Allow small emergency stretch to avoid minor overfull boxes across the document
+% (helps fix tiny overfull \hbox warnings without changing content)
+\emergencystretch=1em
+
 
 % --- Section formatting ---
 \newcommand{\bsc}[1]{\textbf{\scshape{#1}}}
@@ -235,7 +239,11 @@
 
 
 % --- PDF accessibility ---
-\pdfgentounicode=1
+% Some engines (pdfTeX) define \pdfgentounicode; guard its use to avoid
+% "Undefined control sequence" errors on engines that don't provide it.
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
 
 % --- Custom commands ---
 \newcommand{\customItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
@@ -253,8 +261,8 @@
 }
 
 \newcommand{\customProject}[2]{\item
-  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-    \small#1 & \textbf{\small #2} \\
+  \begin{tabular*}{0.995\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \small #2\\
   \end{tabular*}\vspace{-7pt}
 }
 
